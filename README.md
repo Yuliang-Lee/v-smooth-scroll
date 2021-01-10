@@ -9,15 +9,15 @@
 [![npm-downloades](https://img.shields.io/npm/dm/v-smooth-scroll.svg)](https://www.npmjs.com/package/v-smooth-scroll)
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/Yuliang-Lee/v-smooth-scroll/blob/master/LICENSE)
 
-**Lightweight Vue plugin for smooth-scrolling.**
-
-**Compatible with Vue 3.x and Vue 2.x** 
+Lightweight Vue plugin for smooth-scrolling.
 
 For simple use-cases, the native [`scroll-behavior` CSS property](https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-behavior) (working draft) may be enough.
 
+**Compatible with Vue 3.x and Vue 2.x** 
 
 ## Features
 
+- Compatible with Vue 3.x, 2.x
 - Directive and programmatic API with global and local config overrides
 - SSR
 - Smooth, non-blocking animation using `requestAnimationFrame` (with fallback)
