@@ -152,6 +152,10 @@ const VueSmoothScroll = {
 
 export default VueSmoothScroll;
 
+// Export the smooth scroll function so it can be imported
+// directly when using the Composition API
+export const vSmoothScroll = _smoothScroll;
+
 /* istanbul ignore if */
 // if (typeof window !== "undefined" && window.Vue) {
 //   window.Vue.use(VueSmoothScroll);
