@@ -20,7 +20,7 @@ function getDefaultConfig() {
   return {
     duration: 500,
     offset: 0,
-    container: window,
+    container: typeof window === 'undefined' ? null : window,
     updateHistory: true,
     easingFunction: null
   };
@@ -115,7 +115,6 @@ const VueSmoothScroll = {
 
         const clickHandler = function (ev) {
           ev.preventDefault();
-        //   console.log(vnode);
           const hash = isVue3 ? vnode.props.href : vnode.data.attrs.href;
           const scrollTo = document.getElementById(hash.substring(1));
           if (!scrollTo) return; // Do not scroll to non-existing node
@@ -152,6 +151,10 @@ const VueSmoothScroll = {
 };
 
 export default VueSmoothScroll;
+
+// Export the smooth scroll function so it can be imported
+// directly when using the Composition API
+export const vSmoothScroll = _smoothScroll;
 
 /* istanbul ignore if */
 // if (typeof window !== "undefined" && window.Vue) {
