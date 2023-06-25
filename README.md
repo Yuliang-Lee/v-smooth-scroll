@@ -77,7 +77,7 @@ this.$smoothScroll({
   <script src="https://unpkg.com/vue/dist/vue.js"></script>
   <script src="https://unpkg.com/v-smooth-scroll"></script>
   <script>
-    Vue.use(windodw.VueSmoothScroll)
+    Vue.use(window.VueSmoothScroll)
     var app = new Vue({
       el: '#app'
     })
@@ -99,7 +99,7 @@ this.$smoothScroll({
   <script src="https://unpkg.com/v-smooth-scroll"></script>
   <script>
     var app = Vue.createApp({ /* options */ })
-    app.use(windodw.VueSmoothScroll)
+    app.use(window.VueSmoothScroll)
     app.mount('#app')
   </script>
 </body>
